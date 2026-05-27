@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="レプリカ">
+  <rect width="64" height="64" fill="#0b0d12"/>
+  <path d="M14 43V18h7c7 0 12 4 12 11 0 4-2 8-6 10l8 4h-9l-7-4v4h-5Zm5-10h2c4 0 7-1 7-4s-3-5-7-5h-2v9Z" fill="#f3f1eb"/>
+  <path d="M39 21h11v5H39v-5Zm0 9h9v5h-9v-5Zm0 9h12v5H39v-5Z" fill="#c8d8ff"/>
+</svg>
