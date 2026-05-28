@@ -36,6 +36,19 @@ const sectionObserver = new IntersectionObserver(
 
 animatedSections.forEach((section) => sectionObserver.observe(section));
 
+const showFvVideo = () => {
+  fvVideo?.classList.add("is-ready");
+};
+
+if (fvVideo) {
+  if (fvVideo.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
+    showFvVideo();
+  } else {
+    fvVideo.addEventListener("loadeddata", showFvVideo, { once: true });
+    fvVideo.addEventListener("canplay", showFvVideo, { once: true });
+  }
+}
+
 const updateCta = () => {
   const trigger = fv ? fv.offsetHeight * 0.62 : window.innerHeight * 0.62;
   fixedCta.classList.toggle("is-shown", window.scrollY > trigger);
